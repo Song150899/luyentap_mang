@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm phần tử thiếu trong mảng chạy từ 0 đến 10</title>
+</head>
+<body>
+<script>
+    let arr = [1,4,7,6,9]
+        // count = a[a.length - 1];
+    let ptuThieu = [];
+    for ( let i = 0; i <= 10; i++ ) {
+        // tìm phần tử thiếu trong mảng với các phần tử chạy từ o đến 10
+        // ta duyệt mảng với các phần tử chạy từ 0 đến 10
+        if (arr.indexOf(i) == -1) {
+            // sd indexOf để tìm vị trí cần tìm là i
+             // nếu giá trị  không có trong mảng thì indexOf trả về -1
+            ptuThieu.push(i);
+        }
+    }
+    alert(ptuThieu.toString());
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm phần tử có độ dài nhỏ nhất</title>
+</head>
+<body>
+<script>
+    let arr=[' hello', 'xinchao','goodbye','bye']
+    function timlength(arr){
+        let min= arr[0]
+        for (let i=0; i<arr.length;i++) {
+
+            // min = arr[0].length
+
+            if (arr[i].length < min.length) {
+                // nếu độ dài chuỗi đằng sau nhỏ hơn đợ dài chuỗi
+                min= arr[i]
+                // thì min bằng giá trị của mảng tại i
+            }
+        }
+        return min
+    }
+    document.write(timlength(arr))
+
+
+
+</script>
+
+</body>
+</html>

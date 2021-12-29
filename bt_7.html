@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm các phần tử trùng nhau có trong mảng</title>
+</head>
+<body>
+<script>
+    let arr=[3,5,2,3,1,5,1,1]
+    let arrNew=[]
+function laplaiso(arr){
+        for (let i=0;i<arr.length;i++){
+            for (let j=i+1;j<arr.length;j++){
+                //xét j chạy từ sau i==> j=i+1
+                if(arr[i]==arr[j]) {
+                    if (arrNew.indexOf(arr[i]) !== -1) {
+                        // nếu mảng mới arrNew trả về vị trí của phần tử khác -1
+                        // phần tử đó đã có trong mảng
+
+                        continue
+                        // dùng continue để bỏ qua bước lặp hiện tại và trả về vị trí ban đầu
+                    }
+                    arrNew.push(arr[i])
+                }
+        }
+        }                document.write(arrNew+'<br>')
+
+}
+laplaiso(arr)
+</script>
+
+</body>
+</html>
